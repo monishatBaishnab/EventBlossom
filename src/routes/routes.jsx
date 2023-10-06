@@ -6,6 +6,8 @@ import About from "../pages/About/About";
 import Login from "../pages/Login/Login";
 import Regester from "../pages/Regester/Regester";
 import EventDetails from "../pages/EventDetails/EventDetails";
+import Events from "../pages/Events/Events";
+import VanueList from "../pages/VanueList/VanueList";
 
 const routes = createBrowserRouter([
     {
@@ -20,6 +22,14 @@ const routes = createBrowserRouter([
             {
                 path: '/about',
                 element: <About />
+            },
+            {
+                path: '/events',
+                element: <Events />
+            },
+            {
+                path: '/vanueList',
+                element: <VanueList />
             },
             {
                 path: '/login',

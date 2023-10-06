@@ -5,7 +5,14 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'header-bg': "url('/BirthdayParties.jpg')"
+      },
+      fontFamily: {
+        'Playfair': "'Playfair Display', serif"
+      }
+    },
   },
   plugins: [],
 }
