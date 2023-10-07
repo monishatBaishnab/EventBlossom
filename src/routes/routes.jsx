@@ -25,11 +25,13 @@ const routes = createBrowserRouter([
             },
             {
                 path: '/events',
-                element: <Events />
+                element: <Events />,
+                loader: () => fetch('/ourEvents.json')
             },
             {
                 path: '/vanueList',
-                element: <VanueList />
+                element: <VanueList />,
+                loader: () => fetch('/vanues.json'),
             },
             {
                 path: '/login',

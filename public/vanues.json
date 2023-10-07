@@ -1,0 +1,44 @@
+{
+    "venues": [
+        {
+            "id": 1,
+            "venue_name": "Royal Banquet Hall",
+            "location": "Dhaka, Bangladesh",
+            "capacity": "500",
+            "rating": 4.5,
+            "price": "$5,000",
+            "type": "Banquet Hall",
+            "image_url": "https://i.ibb.co/fn4PyWj/vanues-1-min.jpg"
+        },
+        {
+            "id": 2,
+            "venue_name": "Riverside Garden",
+            "location": "Chittagong, Bangladesh",
+            "capacity": "200",
+            "rating": 4.2,
+            "price": "$2,500",
+            "type": "Outdoor Garden",
+            "image_url": "https://i.ibb.co/9s89QRJ/vanues-3-min.jpg"
+        },
+        {
+            "id": 3,
+            "venue_name": "Sundarbans Resort",
+            "location": "Khulna, Bangladesh",
+            "capacity": "100",
+            "rating": 4.7,
+            "price": "$4,000",
+            "type": "Resort",
+            "image_url": "https://i.ibb.co/SBwWMnr/vanues-4-min.jpg"
+        },
+        {
+            "id": 4,
+            "venue_name": "Hillside Retreat",
+            "location": "Sylhet, Bangladesh",
+            "capacity": "150",
+            "rating": 4.0,
+            "price": "$3,000",
+            "type": "Rustic Retreat",
+            "image_url": "https://i.ibb.co/LRtYPHf/vanues-5-min.jpg"
+        }
+    ]
+}

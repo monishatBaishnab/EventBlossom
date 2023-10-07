@@ -7,9 +7,9 @@ const About = () => {
     const { team_members } = useFetchTeamMambers();
     return (
         <div>
-            <PageTitle title={'About'} pageName={'About Us'} />
+            <PageTitle pageName={'About'} title={'About Our Story'} />
             <div className="c-container">
-                <h2 className="text-2xl font-medium text-center">About Our Social Event Management Services in Bangladesh</h2>
+                <h2 className="text-2xl font-medium text-center"></h2>
                 <p className="text-gray-500 mt-5">Welcome to EventBlossom, your premier partner for creating unforgettable social events in the vibrant and culturally rich landscape of Bangladesh. At EventBlossom, we specialize in curating exceptional social experiences that celebrate the diversity and warmth of Bangladeshi culture. Our journey began with a passion for bringing people together and crafting moments that leave lasting impressions. Over the years, we have grown into a dedicated team of event enthusiasts who take pride in transforming your ideas into reality. Whether its a grand wedding, a joyous festival, a corporate gathering, or an intimate family celebration, we have the expertise and creativity to make your event a resounding success.</p>
                 <h5 className="text-xl text-green-500 font-medium my-5">Why Choose Us?</h5>
                 <ul>

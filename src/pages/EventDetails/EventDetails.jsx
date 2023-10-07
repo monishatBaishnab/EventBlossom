@@ -10,7 +10,7 @@ const EventDetails = () => {
 
     return (
         <div>
-            <PageTitle title={title} pageName={'Event Details'} />
+            <PageTitle pageName={title} title={'Event Details Overview'} />
             <div className='c-container'>
                 <div>
                     <h2 className='text-4xl font-medium'>{title}</h2>
