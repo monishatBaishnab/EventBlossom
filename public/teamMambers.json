@@ -1,0 +1,84 @@
+{
+    "team_members": [
+        {
+            "id": "1",
+            "name": "John Doe",
+            "image": "https://i.ibb.co/WFncCzt/man-1-min.jpg",
+            "position": "Event Manager",
+            "mobile": "+88012345678**",
+            "email": "john@example.com"
+        },
+        {
+            "id": "2",
+            "name": "Jane Smith",
+            "image": "https://i.ibb.co/LZGwRzN/man-2-min.jpg",
+            "position": "Marketing Coordinator",
+            "mobile": "+8809876543210",
+            "email": "jane@example.com"
+        },
+        {
+            "id": "3",
+            "name": "Ahmed Rahman",
+            "image": "https://i.ibb.co/7rzqkQq/man-3-min.jpg",
+            "position": "Design Lead",
+            "mobile": "+88023456789**",
+            "email": "ahmed@example.com"
+        },
+        {
+            "id": "4",
+            "name": "Nadia Ali",
+            "image": "https://i.ibb.co/GsBSWdB/woman-1-min.jpg",
+            "position": "Public Relations Specialist",
+            "mobile": "+88034567890**",
+            "email": "nadia@example.com"
+        },
+        {
+            "id": "5",
+            "name": "Rahul Das",
+            "image": "https://i.ibb.co/1Gn5P68/man-4-min.jpg",
+            "position": "Technical Director",
+            "mobile": "+88045678901**",
+            "email": "rahul@example.com"
+        },
+        {
+            "id": "6",
+            "name": "Sara Khan",
+            "image": "https://i.ibb.co/Y2x8Ft5/woman-2-min.jpg",
+            "position": "Event Planner",
+            "mobile": "+88056789012**",
+            "email": "sara@example.com"
+        },
+        {
+            "id": "7",
+            "name": "Mehnaz Ahmed",
+            "image": "https://i.ibb.co/DYBsR9t/man-5-min.jpg",
+            "position": "Marketing Assistant",
+            "mobile": "+88067890123**",
+            "email": "mehnaz@example.com"
+        },
+        {
+            "id": "8",
+            "name": "Imran Hussain",
+            "image": "https://i.ibb.co/tqDNWbn/man-6-min.jpg",
+            "position": "Logistics Coordinator",
+            "mobile": "+88078901234**",
+            "email": "imran@example.com"
+        },
+        {
+            "id": "9",
+            "name": "Sonia Akter",
+            "image": "https://i.ibb.co/ss2x07R/woman-3-min.jpg",
+            "position": "Event Coordinator",
+            "mobile": "+88089012345**",
+            "email": "sonia@example.com"
+        },
+        {
+            "id": "10",
+            "name": "Amit Gupta",
+            "image": "https://i.ibb.co/h8TVWz1/man-7-min.jpg",
+            "position": "Finance Manager",
+            "mobile": "+88090123456**",
+            "email": "amit@example.com"
+        }
+    ]
+}

@@ -1,5 +1,6 @@
-import {Link, useParams} from 'react-router-dom';
+import {useParams} from 'react-router-dom';
 import useFetchEvents from '../../hooks/useFetchEvents';
+import PageTitle from '../../components/PageTitle';
 const EventDetails = () => {
     const {eventId} = useParams();
     const {eventServices} = useFetchEvents();
@@ -9,13 +10,7 @@ const EventDetails = () => {
 
     return (
         <div>
-            <div className="c-container bg-slate-50 mb-5">
-                <h2 className="text-3xl text-center text-[#2A3342] font-medium">Event Details</h2>
-                <div className='flex items-center justify-center mt-2'>
-                    <Link to='/' className='text-green-500'>Home</Link>
-                    <span className='text-gray-500'>/{title} Details</span>
-                </div>
-            </div>
+            <PageTitle title={title} pageName={'Event Details'} />
             <div className='c-container'>
                 <div>
                     <h2 className='text-4xl font-medium'>{title}</h2>
