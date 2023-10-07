@@ -24,7 +24,7 @@ const PricingCard = ({ pricingPackage, handlePurchase }) => {
                 </ul>
             </div>
             <div className="mt-auto w-full">
-                <button onClick={() => handlePurchase(title)} className="w-full bg-green-500 text-white px-4 py-2 rounded-md mt-5">Continue</button>
+                <button onClick={() => handlePurchase(title)} className="w-full bg-green-500 text-white px-4 py-2 rounded-md mt-5">Purchase</button>
             </div>
         </div>
     );

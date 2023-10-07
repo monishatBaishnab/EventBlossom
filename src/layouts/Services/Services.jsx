@@ -17,7 +17,7 @@ const Services = () => {
     return (
         <div className="c-container">
             <SectionTitle title={serviceTitle} description={serviceDescription} />
-            <div className="c-container">
+            <div className="c-container services">
 
                 <Swiper
                     navigation={{
