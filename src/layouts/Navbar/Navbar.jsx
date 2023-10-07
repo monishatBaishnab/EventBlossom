@@ -15,7 +15,7 @@ const Navbar = () => {
                 <div className={`
                 absolute top-0 bg-white w-56 border-r transition-all
                 ${open === true ? 'visible opacity-100 left-0' : 'invisible opacity-0 -left-10'}
-                md:w-auto md:border-r-0 md:bg-transparent bottom-0 md:static md:visible md:opacity-100
+                md:w-auto md:border-r-0 md:bg-transparent bottom-0 md:static md:visible md:opacity-100 md:ml-auto md:mr-5
                 `}>
                     <div className="flex items-center justify-between p-5 pb-0 md:hidden">
                         <Link className="text-xl  text-green-400 font-medium">EventBlossom</Link>

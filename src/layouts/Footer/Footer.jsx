@@ -5,8 +5,8 @@ const Footer = () => {
         <footer className="bg-slate-50">
             <div className="border-b">
                 <div className="c-container">
-                    <div className="mb-5">
-                        <Link className="text-3xl text-center block text-green-400 font-medium">EventBlossom</Link>
+                    <div className="mb-5 flex justify-center">
+                        <Link className="text-3xl text-center text-green-400 font-medium">EventBlossom</Link>
                     </div>
                     <div>
                         <ul className="flex gap-3 flex-col items-center justify-center sm:flex-row">
