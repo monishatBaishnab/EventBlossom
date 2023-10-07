@@ -6,10 +6,11 @@ const RegesterForm = () => {
         e.preventDefault();
         const form = new FormData(e.currentTarget);
         const name = form.get('name');
+        const photoUrl = form.get('photoUrl');
         const email = form.get('email');
         const password = form.get('password');
         const cpassword = form.get('cpassword');
-        console.log(name, email, password, cpassword);
+        console.log(name, photoUrl, email, password, cpassword);
     }
     return (
         <div className="c-container">
@@ -17,6 +18,7 @@ const RegesterForm = () => {
                 <h4 className="text-xl font-medium text-center mb-5 text-[#2A3342]">Sign Up to Your EventBlossom</h4>
                 <form onSubmit={handleRegester}>
                     <Input type='text' name='name' label='Full Name' />
+                    <Input type='text' name='photoUrl' label='Photo URL' />
                     <Input type='email' name='email' label='Email' />
                     <Input type='password' name='password' label='Password' />
                     <Input type='password' name='cpassword' label='Confirm Password' />
