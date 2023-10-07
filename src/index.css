@@ -13,19 +13,7 @@
 body{
     font-family: 'Rubik', sans-serif;
 }
-.services .swiper-button-prev, .swiper-button-next{
-    position: static !important;
-    color: rgb(34 197 94) !important;
-    width: auto !important;
-    height: auto !important;
-    display: inline-block !important;
-}
-.services .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after{
-    content: none !important;
-}
-.services .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after{
-    content: none !important;
-}
+
 .testimonials .swiper-button-prev, .swiper-button-next{
     position: absolute !important;
     color: rgb(34 197 94) !important;
@@ -39,6 +27,22 @@ body{
 .testimonials .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after{
     content: none !important;
 }
+
+.service-btn-prev,
+.service-btn-next{
+    position: static !important;
+    color: rgb(34 197 94) !important;
+    width: auto !important;
+    height: auto !important;
+    display: inline-block !important;
+}
+.services .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after{
+    content: none !important;
+}
+.services .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after{
+    content: none !important;
+}
+
 div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm{
     background-color: rgb(34 197 94) !important;
 }

@@ -37,7 +37,7 @@ const Testimonials = () => {
                     }
                     <div className='flex items-center gap-1 justify-end mt-10'>
                         <span className='swiper-button-prev p-2 text-2xl transition-all rounded-md bg-green-100'><BsArrowLeft className='' /></span>
-                        <span className='swiper-button-next p-2 text-2xl transition-all rounded-md bg-green-100'><BsArrowRight className='' /></span>
+                        <span style={{position: 'absolute !important'}} className='swiper-button-next p-2 text-2xl transition-all rounded-md bg-green-100'><BsArrowRight className='' /></span>
                     </div>
                 </Swiper>
             </div>
