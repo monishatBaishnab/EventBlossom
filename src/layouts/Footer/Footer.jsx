@@ -2,7 +2,7 @@ import { Link, NavLink } from "react-router-dom";
 
 const Footer = () => {
     return (
-        <footer>
+        <footer className="bg-slate-50">
             <div className="border-b">
                 <div className="c-container">
                     <div className="mb-5">

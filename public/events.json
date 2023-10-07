@@ -1,0 +1,76 @@
+{
+    "eventServices": [
+        {
+            "id": 1,
+            "title": "Birthday Parties",
+            "details": "We specialize in creating memorable and fun birthday parties for people of all ages. From themed decorations to entertainment and delicious cakes, we ensure that every birthday celebration is a blast!",
+            "eventImage": "https://i.ibb.co/NrSnt2z/Birthday-Parties-min.jpg",
+            "eventPlanningDetails": {
+                "venue": "Various indoor and outdoor venues",
+                "themeOptions": "Customized themes to match your preferences",
+                "catering": "Delicious menus tailored to your tastes",
+                "photography": "Professional photographers to capture the moments"
+            }
+        },
+        {
+            "id": 2,
+            "title": "Weddings",
+            "details": "Your wedding day is one of the most important events of your life. We offer comprehensive wedding planning services, from venue selection to catering and everything in between, to make your big day truly special.",
+            "eventImage": "https://i.ibb.co/XYjXTHM/Weddings-min.jpg",
+            "eventPlanningDetails": {
+                "venue": "Elegant wedding venues of your choice",
+                "themeOptions": "Customized wedding themes and color schemes",
+                "catering": "Exquisite catering and reception decor",
+                "photography": "Professional photographers and videographers"
+            }
+        },
+        {
+            "id": 3,
+            "title": "Anniversary Parties",
+            "details": "Celebrate your love and commitment with an anniversary party that reflects your journey together. We create romantic and personalized anniversary celebrations filled with love and nostalgia.",
+            "eventImage": "https://i.ibb.co/Yhsqpqh/Anniversary-Parties-min.jpg",
+            "eventPlanningDetails": {
+                "venue": "Intimate and romantic settings",
+                "themeOptions": "Personalized themes to match your love story",
+                "catering": "Gourmet dining options and cake",
+                "photography": "Professional photographers to capture the romantic moments"
+            }
+        },
+        {
+            "id": 4,
+            "title": "Engagement Parties",
+            "details": "Announce your engagement with style and elegance. Our engagement party planning services ensure that your event is a reflection of your love story and sets the tone for your upcoming wedding.",
+            "eventImage": "https://i.ibb.co/YPCgh0D/Engagement-Parties-min.jpg",
+            "eventPlanningDetails": {
+                "venue": "Charming and stylish event spaces",
+                "themeOptions": "Engagement themes that capture your romance",
+                "catering": "Delicious hors d'oeuvres and drinks",
+                "photography": "Professional photographers to capture your special moments"
+            }
+        },
+        {
+            "id": 5,
+            "title": "Baby Showers",
+            "details": "Welcoming a new member to the family is a joyous occasion. We design baby showers that are both cute and practical, with adorable decorations, games, and thoughtful gifts for the parents-to-be.",
+            "eventImage": "https://i.ibb.co/pnQCv32/Baby-Showers-min.jpg",
+            "eventPlanningDetails": {
+                "venue": "Charming venues with baby-friendly amenities",
+                "themeOptions": "Baby-themed decor and color schemes",
+                "catering": "Baby shower brunch or afternoon tea",
+                "photography": "Professional photographers to capture the baby bump moments"
+            }
+        },
+        {
+            "id": 6,
+            "title": "Retirement Parties",
+            "details": "Celebrate the end of a successful career with a retirement party that honors the retiree's achievements and contributions. We create retirement celebrations that are meaningful and memorable.",
+            "eventImage": "https://i.ibb.co/ZS3qrHj/retirement-parties-min.jpg",
+            "eventPlanningDetails": {
+                "venue": "Elegant venues with a touch of nostalgia",
+                "themeOptions": "Retirement themes reflecting the retiree's passions",
+                "catering": "Retirement dinner and dessert options",
+                "photography": "Professional photographers to capture the retirement moments"
+            }
+        }
+    ]
+}
