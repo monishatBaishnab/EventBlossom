@@ -1,0 +1,43 @@
+{
+    "pricingPackages": [
+        {
+            "id": 1,
+            "package": "Silver Celebration",
+            "price": "$999",
+            "consultation": "1 consultation",
+            "decorations": "Basic decorations",
+            "vendorCoordination": "Limited vendor coordination",
+            "guests": "Up to 50 guests",
+            "eventDuration": "Up to 4 hours",
+            "customizedTheme": "No Customize Theme",
+            "photography": "No Photography",
+            "onlineSupport": "Email support"
+        },
+        {
+            "id": 2,
+            "package": "Golden Glamour",
+            "price": "$2,499",
+            "consultation": "3 consultations",
+            "decorations": "Premium decorations",
+            "vendorCoordination": "Extensive vendor coordination",
+            "guests": "Up to 150 guests",
+            "eventDuration": "Up to 8 hours",
+            "customizedTheme": "No Customize Theme",
+            "photography": "Professional photography included",
+            "onlineSupport": "Email and phone support"
+        },
+        {
+            "id": 3,
+            "package": "Platinum Prestige",
+            "price": "$4,999",
+            "consultation": "Unlimited consultations",
+            "decorations": "Luxury and custom decorations",
+            "vendorCoordination": "Full-service vendor coordination",
+            "guests": "Unlimited guests",
+            "eventDuration": "Full-day event planning",
+            "customizedTheme": "Elaborate customized themes",
+            "photography": "Professional photography and videography",
+            "onlineSupport": "Priority email, phone, and on-site support"
+        }
+    ]
+}

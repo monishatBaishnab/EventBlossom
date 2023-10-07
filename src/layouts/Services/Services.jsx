@@ -4,19 +4,19 @@ import { Navigation } from 'swiper/modules';
 import { BsArrowLeft, BsArrowRight } from 'react-icons/bs'
 import 'swiper/css';
 import 'swiper/css/navigation';
-import useFetchAll from '../../hooks/useFetchAll';
 import ServicesCard from '../../components/ServicesCard';
+import SectionTitle from '../../components/SectionTitle';
+import useFetchEvents from '../../hooks/useFetchEvents';
 
 
 
 const Services = () => {
-    const {eventServices} = useFetchAll();
+    const {eventServices} = useFetchEvents();
+    const serviceTitle = 'Services';
+    const serviceDescription = 'We bring you some exceptional services.';
     return (
         <div className="c-container">
-            <div className="flex justify-center items-center flex-col">
-                <h5 className="text-lg px-2 rounded-md mb-2 bg-green-100 text-green-500 inline-block">Services</h5>
-                <h2 className="text-2xl font-medium text-center">We bring you some exceptional services.</h2>
-            </div>
+            <SectionTitle title={serviceTitle} description={serviceDescription} />
             <div className="c-container">
 
                 <Swiper

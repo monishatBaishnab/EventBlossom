@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-const useFetchAll = () => {
+const useFetchEvents = () => {
     const [events, setEvents] = useState([]);
     useEffect(()=> {
         fetch('/events.json')
@@ -11,4 +11,4 @@ const useFetchAll = () => {
     return events;
 };
 
-export default useFetchAll;
+export default useFetchEvents;
