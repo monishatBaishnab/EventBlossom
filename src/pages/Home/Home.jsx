@@ -7,13 +7,12 @@ import Testimonials from "../../layouts/Testimonials/Testimonials";
 import { authContext } from "../../authProvider/authProvider";
 
 const Home = () => {
-    const {success, setSuccess} = useContext(authContext);
+    const { success, setSuccess } = useContext(authContext);
     if (success !== '') {
         Toast.fire({
             icon: 'success',
             title: success
         })
-        setSuccess('');
     }
     return (
         <div className="">
@@ -21,6 +20,9 @@ const Home = () => {
             <Services />
             <Pricing />
             <Testimonials />
+            {
+                success !== '' && setSuccess('')
+            }
         </div>
     );
 };

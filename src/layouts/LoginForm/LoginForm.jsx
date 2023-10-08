@@ -1,13 +1,29 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Input from "../../components/Input";
+import { useContext } from "react";
+import { authContext } from "../../authProvider/authProvider";
+import Toast from "../../components/Tost";
 
 const LoginForm = () => {
+    const { singInWithEmailPass, setSuccess } = useContext(authContext);
+    const navigate = useNavigate();
     const handleLogin = e => {
         e.preventDefault();
         const form = new FormData(e.currentTarget);
         const email = form.get('email');
         const password = form.get('password');
-        console.log(email, password);
+        singInWithEmailPass(email, password)
+            .then(() => {
+                setSuccess('Sign Up Successfull.');
+                navigate('/');
+            })
+            .catch(err => {
+                const error = err.message.slice(17, -2);
+                Toast.fire({
+                    icon: 'error',
+                    title: error
+                })
+            })
     }
     return (
         <div className="c-container">

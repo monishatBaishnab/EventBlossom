@@ -26,7 +26,6 @@ const AuthProvider = ({ children }) => {
         return signInWithPopup(auth, googleProvider);
     }
     const singOutUser = () => {
-        setLoadingUser(true);
         return signOut(auth, googleProvider);
     }
     const updateUser = (name, photoUrl) => {
@@ -38,10 +37,11 @@ const AuthProvider = ({ children }) => {
 
     useEffect(() => {
         // setUserError('');
-        onAuthStateChanged(auth, currentUser => {
+        const unSubcribe = onAuthStateChanged(auth, currentUser => {
             setUser(currentUser);
+            setLoadingUser(false);
         })
-        setLoadingUser(false);
+        return () => unSubcribe();
     }, [])
 
     const authInfo = {

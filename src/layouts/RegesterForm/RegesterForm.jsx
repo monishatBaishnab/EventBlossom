@@ -9,7 +9,7 @@ import Toast from "../../components/Tost";
 const RegesterForm = () => {
     const { singUpWithEmailPass, updateUser, setSuccess, user } = useContext(authContext);
     const navigate = useNavigate();
-    
+
 
     const handleRegester = e => {
         e.preventDefault();
@@ -49,7 +49,13 @@ const RegesterForm = () => {
             .then(() => {
                 updateUser(name, photoUrl)
                     .then()
-                    .catch(err => console.log(err.message))
+                    .catch(err => {
+                        const error = err.message.slice(17, -2);
+                        Toast.fire({
+                            icon: 'error',
+                            title: error
+                        })
+                    })
                 setSuccess('Sign Up Successfull.');
                 navigate('/');
             })

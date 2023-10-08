@@ -44,7 +44,7 @@ const routes = createBrowserRouter([
             },
             {
                 path: '/eventDetails/:eventId',
-                element: <EventDetails />
+                element: <PrivateRoute><EventDetails /></PrivateRoute>
             }
         ]
     }
