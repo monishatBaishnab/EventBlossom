@@ -6,7 +6,7 @@ const ServicesCard = ({eventService}) => {
     const {id, title, details, eventImage} = eventService;
     return (
         <SwiperSlide>
-            <div className='p-5 border rounded-lg'>
+            <div data-aos='fade-right' className='p-5 border rounded-lg'>
                 <div className='w-full h-[180px] overflow-hidden rounded-md'>
                     <img className='w-full h-full object-cover' src={eventImage} alt={title} />
                 </div>

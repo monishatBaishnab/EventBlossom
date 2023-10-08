@@ -3,10 +3,12 @@ import Input from "../../components/Input";
 import { useContext } from "react";
 import { authContext } from "../../authProvider/authProvider";
 import Toast from "../../components/Tost";
+import PropTypes from 'prop-types'
 
-const LoginForm = () => {
+const LoginForm = ({state}) => {
     const { singInWithEmailPass, signInWithGoogle, setSuccess } = useContext(authContext);
     const navigate = useNavigate();
+    
     const handleLogin = e => {
         e.preventDefault();
         const form = new FormData(e.currentTarget);
@@ -15,7 +17,7 @@ const LoginForm = () => {
         singInWithEmailPass(email, password)
             .then(() => {
                 setSuccess('Sign In Successfull.');
-                navigate('/');
+                {state ? navigate(`${state}`) : navigate('/')}
             })
             .catch(err => {
                 const error = err.message.slice(17, -2);
@@ -30,7 +32,7 @@ const LoginForm = () => {
         signInWithGoogle()
         .then(() => {
             setSuccess('Sign In Successfull.');
-            navigate('/');
+            {state ? navigate(`${state}`) : navigate('/')}
         })
         .catch(err => {
             const error = err.message.slice(17, -2);
@@ -41,7 +43,7 @@ const LoginForm = () => {
         })
     }
     return (
-        <div className="c-container">
+        <div data-aos="fade-right" className="c-container">
             <div className="max-w-[400px] mx-auto">
                 <h4 className="text-xl font-medium text-center mb-5 text-[#2A3342]">Sign In to Your EventBlossom</h4>
                 <form onSubmit={handleLogin}>
@@ -55,5 +57,9 @@ const LoginForm = () => {
         </div>
     );
 };
+
+LoginForm.propTypes = {
+    state: PropTypes.string,
+}
 
 export default LoginForm;

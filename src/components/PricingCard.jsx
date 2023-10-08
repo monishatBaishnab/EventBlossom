@@ -6,7 +6,8 @@ const PricingCard = ({ pricingPackage, handlePurchase }) => {
     // console.log(pricingPackage);
     // const price = pricingPackage;
     return (
-        <div className="bg-white p-8 rounded-lg flex flex-col items-center">
+        <div data-aos="fade-up"
+        data-aos-anchor-placement="bottom-bottom" className="bg-white p-8 rounded-lg flex flex-col items-center">
             <div className="flex flex-col items-center my-5">
                 <h4 className="text-xl text-green-500 mb-2 font-medium">{title}</h4>
                 <h2 className="flex items-start text-[#2A3342]"><span className="text-lg mr-2">Price:</span><span className="text-4xl font-semibold">{price}</span></h2>

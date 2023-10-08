@@ -2,10 +2,10 @@
 import {BsArrowRight} from 'react-icons/bs'
 const Header = () => {
     return (
-        <div className="bg-header-bg bg-cover bg-bottom min-h-[500px]">
+        <div data-aos="fade-left" className="bg-header-bg bg-cover bg-bottom min-h-[500px]">
             <div className="bg-green-50/80 min-h-[500px]">
                 <div className="c-container">
-                <div className="md:max-w-2xl mx-auto">
+                <div className="md:max-w-2xl mx-auto" data-aos='fade-right'>
                     <h2 className="pt-10 mb-5 text-lg md:text-3xl md:pt-20 font-medium">
                         <span className="md:text-xl">Connect</span> 
                         <span className="text-green-500 font-Playfair text-2xl block md:text-5xl">EventBlossom</span> 

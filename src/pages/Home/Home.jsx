@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import Toast from "../../components/Tost";
 import Header from "../../layouts/Header/Header";
 import Pricing from "../../layouts/Pricing/Pricing";
@@ -14,15 +14,19 @@ const Home = () => {
             title: success
         })
     }
+    useEffect(() => {
+        setTimeout(() => {
+            {
+                success !== '' && setSuccess('')
+            }
+        }, 1000);
+    }, [setSuccess, success])
     return (
         <div className="">
             <Header />
             <Services />
             <Pricing />
             <Testimonials />
-            {
-                success !== '' && setSuccess('')
-            }
         </div>
     );
 };

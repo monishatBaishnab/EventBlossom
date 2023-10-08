@@ -86,7 +86,7 @@ const RegesterForm = () => {
 
 
     return (
-        <div className="c-container">
+        <div data-aos="fade-left" className="c-container">
             <div className="max-w-[400px] mx-auto">
                 <h4 className="text-xl font-medium text-center mb-5 text-[#2A3342]">Sign Up to Your EventBlossom</h4>
                 <form onSubmit={handleRegester}>

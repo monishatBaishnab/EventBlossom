@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 const TeamMamberCard = ({team_member}) => {
     const { name, image, position } = team_member || {};
     return (
-        <div className="flex items-center flex-col border p-8 rounded-md">
+        <div data-aos="fade-up" data-aos-anchor-placement="center-bottom" className="flex items-center flex-col border p-8 rounded-md">
             <div className="w-[150px] h-[150px] rounded-full overflow-hidden">
                 <img src={image} alt={name} />
             </div>

@@ -6,7 +6,7 @@ import PropTypes from 'prop-types'
 const VanueCard = ({ vanue }) => {
     const {venue_name, location, capacity, rating, price, type, image_url} = vanue || {};
     return (
-        <div className="relative">
+        <div data-aos="zoom-out-up" className="relative">
             <span className="absolute left-3 top-3 px-2 py-[2px] bg-green-500 text-white rounded-sm">{type}</span>
             <div className="w-full h-[250px] overflow-hidden rounded-t-md">
                 <img src={image_url} alt={venue_name} />

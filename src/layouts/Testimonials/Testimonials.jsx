@@ -18,7 +18,7 @@ const Testimonials = () => {
             <SectionTitle title={testimonialTitle} description={testimonialDescription} />
             <div className="c-container testimonials">
 
-                <Swiper
+                <Swiper data-aos="zoom-out-left"
                     navigation={{
                         nextEl: ".swiper-button-next",
                         prevEl: ".swiper-button-prev",

@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 const OurEventCard = ({ event }) => {
     const { event_type, event_name, date, location, description, organizer, event_image } = event || {};
     return (
-        <div className="flex flex-col items-center border rounded-md" id='ourEvent'>
+        <div data-aos="zoom-out-up" className="flex flex-col items-center border rounded-md" id='ourEvent'>
             <div className="w-full h-[300px] overflow-hidden rounded-t-md">
                 <img id='ourEventImg' className="h-full w-full object-cover transition-all" src={event_image} alt={event_name} />
             </div>
