@@ -8,7 +8,7 @@ const Events = () => {
         <div>
             <PageTitle pageName={'Events'} title={'Explore Our Latest Experiences'} />
             <div className="c-container">
-                <div className="grid gap-5 grid-cols-1 md:grid-cols-2">
+                <div className="grid gap-5 grid-cols-1 md:grid-cols-2 overflow-hidden">
                     {
                         events?.map(event => <OurEventCard key={event.id} event={event} />)
                     }

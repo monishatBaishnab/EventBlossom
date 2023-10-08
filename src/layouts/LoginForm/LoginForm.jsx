@@ -43,7 +43,7 @@ const LoginForm = ({state}) => {
         })
     }
     return (
-        <div data-aos="fade-right" className="c-container">
+        <div data-aos="fade-right" className="c-container overflow-hidden">
             <div className="max-w-[400px] mx-auto">
                 <h4 className="text-xl font-medium text-center mb-5 text-[#2A3342]">Sign In to Your EventBlossom</h4>
                 <form onSubmit={handleLogin}>

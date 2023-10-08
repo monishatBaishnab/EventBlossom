@@ -1,7 +1,6 @@
 import { Link, useNavigate } from "react-router-dom";
 import Input from "../../components/Input";
 import { useContext } from "react";
-import toast, { Toaster } from 'react-hot-toast';
 import { authContext } from "../../authProvider/authProvider";
 import Toast from "../../components/Tost";
 
@@ -20,7 +19,7 @@ const RegesterForm = () => {
         const password = form.get('password');
         const cpassword = form.get('cpassword');
         if (password.length < 6) {
-            toast.error('Password Length Too Short');
+            Toast.fire('Password Length Too Short');
             return;
         }
         if (!/[A-Z]/.test(password)) {
@@ -101,7 +100,6 @@ const RegesterForm = () => {
                 <button onClick={handleGoogleSignIn} className="flex items-center justify-center gap-2 w-full px-4 py-2 mt-4 border border-[#EEF0F3] rounded-md"><img src="/google.jpg" alt="" />Sign in with Google</button>
                 <p className="text-center mt-5">Already have an account? <Link to='/login' className="text-green-500">Sign In</Link></p>
             </div>
-            <Toaster />
         </div>
     );
 };

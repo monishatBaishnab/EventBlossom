@@ -6,7 +6,7 @@ import useFetchTeamMambers from "../../hooks/useFetchTeamMambers";
 const About = () => {
     const { team_members } = useFetchTeamMambers();
     return (
-        <div>
+        <div className="overflow-hidden">
             <PageTitle pageName={'About'} title={'About Our Story'} />
             <div data-aos="fade-left" data-aos-duration="500" className="c-container">
                 <h2 className="text-2xl font-medium text-center"></h2>

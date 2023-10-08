@@ -16,7 +16,7 @@ const Testimonials = () => {
 
         <div>
             <SectionTitle title={testimonialTitle} description={testimonialDescription} />
-            <div className="c-container testimonials">
+            <div className="c-container testimonials overflow-hidden">
 
                 <Swiper data-aos="zoom-out-left"
                     navigation={{
