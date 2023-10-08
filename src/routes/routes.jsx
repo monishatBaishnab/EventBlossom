@@ -8,6 +8,7 @@ import Regester from "../pages/Regester/Regester";
 import EventDetails from "../pages/EventDetails/EventDetails";
 import Events from "../pages/Events/Events";
 import VanueList from "../pages/VanueList/VanueList";
+import PrivateRoute from "../privateRoute/privateRoute";
 
 const routes = createBrowserRouter([
     {
@@ -25,12 +26,12 @@ const routes = createBrowserRouter([
             },
             {
                 path: '/events',
-                element: <Events />,
+                element: <PrivateRoute><Events /></PrivateRoute>,
                 loader: () => fetch('/ourEvents.json')
             },
             {
                 path: '/vanueList',
-                element: <VanueList />,
+                element: <PrivateRoute><VanueList /></PrivateRoute>,
                 loader: () => fetch('/vanues.json'),
             },
             {

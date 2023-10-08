@@ -7,7 +7,7 @@ import Toast from "../../components/Tost";
 
 
 const RegesterForm = () => {
-    const { singUpWithEmailPass, updateUser, success, setSuccess } = useContext(authContext);
+    const { singUpWithEmailPass, updateUser, setSuccess, user } = useContext(authContext);
     const navigate = useNavigate();
     
 
@@ -61,6 +61,7 @@ const RegesterForm = () => {
                 })
             });
     }
+
 
 
     return (

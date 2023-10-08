@@ -1,6 +1,6 @@
 import { createContext, useEffect, useState } from "react";
 import PropTypes from 'prop-types';
-import { GoogleAuthProvider, createUserWithEmailAndPassword, getAuth, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, updateProfile } from "firebase/auth";
+import { GoogleAuthProvider, createUserWithEmailAndPassword, getAuth, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut, updateProfile } from "firebase/auth";
 import app from "../firebase/firebase.config";
 
 const auth = getAuth(app);
@@ -25,6 +25,10 @@ const AuthProvider = ({ children }) => {
         setLoadingUser(true);
         return signInWithPopup(auth, googleProvider);
     }
+    const singOutUser = () => {
+        setLoadingUser(true);
+        return signOut(auth, googleProvider);
+    }
     const updateUser = (name, photoUrl) => {
         setLoadingUser(true);
         return updateProfile(auth.currentUser, {
@@ -45,6 +49,7 @@ const AuthProvider = ({ children }) => {
         singUpWithEmailPass,
         signInWithGoogle,
         singInWithEmailPass,
+        singOutUser,
         loadingUser,
         updateUser,
         success,

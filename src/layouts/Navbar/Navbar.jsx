@@ -1,10 +1,12 @@
 import { Link, NavLink } from "react-router-dom";
 import { AiOutlineCloseCircle } from 'react-icons/ai'
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { FaBars, FaUserCircle } from 'react-icons/fa'
+import { authContext } from "../../authProvider/authProvider";
 
 const Navbar = () => {
     const [open, setOpen] = useState(false);
+    const { user, singOutUser } = useContext(authContext);
     return (
         <nav className="c-container py-5 border-b">
             <div className="flex items-center justify-between">
@@ -32,7 +34,11 @@ const Navbar = () => {
                     <div className="text-2xl">
                         <FaUserCircle />
                     </div>
-                    <Link to='/login' className="text-gray-500 transition-all hover:text-green-500">Login</Link>
+                    {
+                        user !== null ?
+                            <button onClick={() => singOutUser().then().catch()} className="text-gray-500 transition-all hover:text-green-500">Logout</button> :
+                            <Link to='/login' className="text-gray-500 transition-all hover:text-green-500">Login</Link>
+                    }
                 </div>
             </div>
         </nav>

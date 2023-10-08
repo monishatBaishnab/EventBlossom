@@ -13,8 +13,8 @@ const Home = () => {
             icon: 'success',
             title: success
         })
+        setSuccess('');
     }
-    setSuccess('');
     return (
         <div className="">
             <Header />
