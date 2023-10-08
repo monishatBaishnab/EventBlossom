@@ -2,15 +2,26 @@ import SectionTitle from "../../components/SectionTitle";
 import useFetchPricing from "../../hooks/useFetchPricing";
 import PricingCard from "../../components/PricingCard";
 import Swal from "sweetalert2";
+import { useContext } from "react";
+import { authContext } from "../../authProvider/authProvider";
 
 const Pricing = () => {
     const pricingTitle = 'Pricing';
     const pricingDescription = 'Flexible pricing plan for your Social Event';
     const { pricingPackages } = useFetchPricing();
+    const { user } = useContext(authContext);
     const handlePurchase = (title) => {
+        if (user === null) {
+            Swal.fire(
+                'Warning',
+                "You are not logged in yet, please login first.",
+                'warning'
+            )
+            return;
+        }
         Swal.fire(
             'Congratulations!',
-            "You have purchased "+title+'.',
+            "You have purchased " + title + '.',
             'success'
         )
     }

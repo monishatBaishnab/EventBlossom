@@ -7,7 +7,7 @@ import Toast from "../../components/Tost";
 
 
 const RegesterForm = () => {
-    const { singUpWithEmailPass, updateUser, setSuccess, user } = useContext(authContext);
+    const { singUpWithEmailPass, updateUser, setSuccess, signInWithGoogle } = useContext(authContext);
     const navigate = useNavigate();
 
 
@@ -68,6 +68,21 @@ const RegesterForm = () => {
             });
     }
 
+    const handleGoogleSignIn = () => {
+        signInWithGoogle()
+            .then(() => {
+                setSuccess('Sign In Successfull.');
+                navigate('/');
+            })
+            .catch(err => {
+                const error = err.message.slice(17, -2);
+                Toast.fire({
+                    icon: 'error',
+                    title: error
+                })
+            })
+    }
+
 
 
     return (
@@ -83,7 +98,7 @@ const RegesterForm = () => {
                     <Input type='password' name='cpassword' label='Confirm Password' />
                     <button className="w-full bg-green-500 px-4 py-2 rounded-md text-white mt-2">Sign Up</button>
                 </form>
-                <button className="flex items-center justify-center gap-2 w-full px-4 py-2 mt-4 border border-[#EEF0F3] rounded-md"><img src="/google.jpg" alt="" />Sign in with Google</button>
+                <button onClick={handleGoogleSignIn} className="flex items-center justify-center gap-2 w-full px-4 py-2 mt-4 border border-[#EEF0F3] rounded-md"><img src="/google.jpg" alt="" />Sign in with Google</button>
                 <p className="text-center mt-5">Already have an account? <Link to='/login' className="text-green-500">Sign In</Link></p>
             </div>
             <Toaster />
