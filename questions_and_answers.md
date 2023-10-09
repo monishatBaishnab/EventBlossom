@@ -43,9 +43,9 @@ sum(1, "2");
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: C
 
-<i>Write your explanation here</i>
+<i>Here the add function accepts two parameters and returns the sum of the two parameters. A string and a number are given as two arguments when calling the function. Because of the implicit conversion here, the integer value is converted to string. Finally the string concatenation is done here and a string '12' is returned.</i>
 
 </p>
 </details>
@@ -69,9 +69,9 @@ console.log(food);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: A
 
-<i>Write your explanation here</i>
+<i>Here in the first line the food variable is set to ['🍕', '🍫', '🥑', '🍔'] as an object. The second and third lines set the man of the favorite info object under the info object. In the second line, the value of 0 position is taken by slicing the food object, but no change is made to the food object, in the third line, the value of the favorite object of info is directly set to "🍝". Finally the info object remains unchanged so the value declared at the very beginning in the last line is consoled.</i>
 
 </p>
 </details>
@@ -94,9 +94,9 @@ console.log(sayHi());
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: B
 
-<i>Write your explanation here</i>
+<i>A parameter was taken during function declaration and returned using a template literal inside the function, but no arguments were passed during function calling so the parameter's default value was undefined console.</i>
 
 </p>
 </details>
@@ -122,9 +122,9 @@ console.log(count);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: C
 
-<i>Write your explanation here</i>
+<i>Here the count variable is initially set to 0. nums are placed in the array [0, 1, 2, 3]. Condition is given inside by foreach on nums array if num from nums is true then 1 will be added to the previous value of count. During the foreach loop, first num returns 0 due to which the value of count is not added the first time, the remaining three times returns 1, 2, 3 so then 1 is added to the value of count and finally the value is 3.</i>
 
 </p>
 </details>
