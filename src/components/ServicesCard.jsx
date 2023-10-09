@@ -6,7 +6,7 @@ import { BiSolidNotepad } from 'react-icons/bi'
 
 const ServicesCard = ({ eventService }) => {
     const { id, title, details, eventImage, rating, count } = eventService;
-    
+
     return (
         <SwiperSlide>
             <div data-aos='fade-right' className='p-5 border rounded-lg'>
@@ -18,13 +18,19 @@ const ServicesCard = ({ eventService }) => {
                     <p className='text-center text-sm text-gray-700'>{details.length > 30 ? details.slice(0, 30) + ' ...' : details}</p>
                     <div>
                         <div className='flex justify-between gap-1 mt-2'>
-                            <span className='text-center gap-1 text-gray-500 flex items-center'>
+                            <div className='text-center gap-1 text-gray-500 flex items-center'>
                                 <span><AiFillStar /></span>
                                 <span>({rating})</span>
-                            </span>
-                            <span className='text-center gap-1 text-gray-500 rounded-sm flex items-center'>
+                            </div>
+                            <div className='text-center gap-1 text-gray-500 rounded-sm flex items-center'>
                                 <BiSolidNotepad />{count} <span>Event organized</span>
-                            </span>
+                            </div>
+                        </div>
+                        <span className='text-gray-900 text-center block my-2 border-b pb-2'>We have Three Pricing plan</span>
+                        <div className='flex items-center justify-center gap-2 text-gray-500 font-medium'>
+                            <span>$999 /</span>
+                            <span>$2499 /</span>
+                            <span>$4999</span>
                         </div>
                     </div>
                     <Link to={`/eventDetails/${id}`} className='text-white w-full block text-center bg-green-500 px-4 py-2 rounded-md mt-4'>See Details</Link>
