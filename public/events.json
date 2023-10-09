@@ -10,7 +10,9 @@
                 "themeOptions": "Customized themes to match your preferences",
                 "catering": "Delicious menus tailored to your tastes",
                 "photography": "Professional photographers to capture the moments"
-            }
+            },
+            "rating": 4.8,
+            "count": 42
         },
         {
             "id": 2,
@@ -22,7 +24,9 @@
                 "themeOptions": "Customized wedding themes and color schemes",
                 "catering": "Exquisite catering and reception decor",
                 "photography": "Professional photographers and videographers"
-            }
+            },
+            "rating": 4.9,
+            "count": 56
         },
         {
             "id": 3,
@@ -34,7 +38,9 @@
                 "themeOptions": "Personalized themes to match your love story",
                 "catering": "Gourmet dining options and cake",
                 "photography": "Professional photographers to capture the romantic moments"
-            }
+            },
+            "rating": 4.7,
+            "count": 34
         },
         {
             "id": 4,
@@ -46,7 +52,9 @@
                 "themeOptions": "Engagement themes that capture your romance",
                 "catering": "Delicious hors d'oeuvres and drinks",
                 "photography": "Professional photographers to capture your special moments"
-            }
+            },
+            "rating": 4.6,
+            "count": 28
         },
         {
             "id": 5,
@@ -58,7 +66,9 @@
                 "themeOptions": "Baby-themed decor and color schemes",
                 "catering": "Baby shower brunch or afternoon tea",
                 "photography": "Professional photographers to capture the baby bump moments"
-            }
+            },
+            "rating": 4.7,
+            "count": 36
         },
         {
             "id": 6,
@@ -70,7 +80,9 @@
                 "themeOptions": "Retirement themes reflecting the retiree's passions",
                 "catering": "Retirement dinner and dessert options",
                 "photography": "Professional photographers to capture the retirement moments"
-            }
+            },
+            "rating": 4.8,
+            "count": 30
         }
     ]
 }

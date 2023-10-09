@@ -44,8 +44,8 @@ const Navbar = () => {
                         }
 
                         <div className={`absolute right-0 w-[250px] bg-white z-50 p-5 transition-all rounded-b-md border ${openProfile === true ? 'visible opacity-100 top-[52px]' : 'invisible opacity-0 top-[48px]'}`}>
-                            <span className="block text-sm mt-2 text-gray-500">{user?.displayName}</span>
-                            <span className="block text-sm mt-2 text-gray-500">{user?.email?.toLowerCase()}</span>
+                            <span className="block text-center font-medium mt-2 text-green-500">{user?.displayName}</span>
+                            <span className="block text-center text-sm mt-2 text-gray-500">{user?.email?.toLowerCase()}</span>
                             <button onClick={() => {
                                 singOutUser().then().catch();
                                 setOpenProfile(false);
