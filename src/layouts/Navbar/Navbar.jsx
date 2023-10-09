@@ -1,7 +1,7 @@
 import { Link, NavLink } from "react-router-dom";
 import { AiOutlineCloseCircle } from 'react-icons/ai'
 import { useContext, useState } from "react";
-import { FaAngleDown, FaAngleUp, FaBars, FaUserCircle } from 'react-icons/fa'
+import { FaAngleDown, FaBars, FaUserCircle } from 'react-icons/fa'
 import { authContext } from "../../authProvider/authProvider";
 
 const Navbar = () => {

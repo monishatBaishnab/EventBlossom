@@ -47,7 +47,10 @@ const RegesterForm = () => {
         singUpWithEmailPass(email, password)
             .then(() => {
                 updateUser(name, photoUrl)
-                    .then()
+                    .then(() => {
+                        setSuccess('Sign Up Successfull.');
+                        navigate('/');
+                    })
                     .catch(err => {
                         const error = err.message.slice(17, -2);
                         Toast.fire({
@@ -55,8 +58,6 @@ const RegesterForm = () => {
                             title: error
                         })
                     })
-                setSuccess('Sign Up Successfull.');
-                navigate('/');
             })
             .catch(err => {
                 const error = err.message.slice(17, -2);
