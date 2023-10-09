@@ -13,14 +13,14 @@ const PricingCard = ({ pricingPackage, handlePurchase }) => {
             </div>
             <div>
                 <ul>
-                    <li className="flex items-start gap-2"><AiFillCheckCircle className="text-green-500 mt-[4px]" /> <span className="text-[#556987]">{consultation}</span></li>
-                    <li className="flex items-start gap-2"><AiFillCheckCircle className="text-green-500 mt-[4px]" /> <span className="text-[#556987]">{decorations}</span></li>
-                    <li className="flex items-start gap-2"><AiFillCheckCircle className="text-green-500 mt-[4px]" /> <span className="text-[#556987]">{vendorCoordination}</span></li>
-                    <li className="flex items-start gap-2"><AiFillCheckCircle className="text-green-500 mt-[4px]" /> <span className="text-[#556987]">{guests}</span></li>
-                    <li className="flex items-start gap-2"><AiFillCheckCircle className="text-green-500 mt-[4px]" /> <span className="text-[#556987]">{eventDuration}</span></li>
-                    <li className="flex items-start gap-2"><AiFillCheckCircle className="text-green-500 mt-[4px]" /> <span className="text-[#556987]">{customizedTheme}</span></li>
-                    <li className="flex items-start gap-2"><AiFillCheckCircle className="text-green-500 mt-[4px]" /> <span className="text-[#556987]">{photography}</span></li>
-                    <li className="flex items-start gap-2"><AiFillCheckCircle className="text-green-500 mt-[4px]" /> <span className="text-[#556987]">{onlineSupport}</span></li>
+                    <li className="flex items-start gap-2"><div className="w-4 basis-4"><AiFillCheckCircle className="text-green-500 mt-[4px]" /></div> <span className="text-[#556987]">{consultation}</span></li>
+                    <li className="flex items-start gap-2"><div className="w-4 basis-4"><AiFillCheckCircle className="text-green-500 mt-[4px]" /></div> <span className="text-[#556987]">{decorations}</span></li>
+                    <li className="flex items-start gap-2"><div className="w-4 basis-4"><AiFillCheckCircle className="text-green-500 mt-[4px]" /></div> <span className="text-[#556987]">{vendorCoordination}</span></li>
+                    <li className="flex items-start gap-2"><div className="w-4 basis-4"><AiFillCheckCircle className="text-green-500 mt-[4px]" /></div> <span className="text-[#556987]">{guests}</span></li>
+                    <li className="flex items-start gap-2"><div className="w-4 basis-4"><AiFillCheckCircle className="text-green-500 mt-[4px]" /></div> <span className="text-[#556987]">{eventDuration}</span></li>
+                    <li className="flex items-start gap-2"><div className="w-4 basis-4"><AiFillCheckCircle className="text-green-500 mt-[4px]" /></div> <span className="text-[#556987]">{customizedTheme}</span></li>
+                    <li className="flex items-start gap-2"><div className="w-4 basis-4"><AiFillCheckCircle className="text-green-500 mt-[4px]" /></div> <span className="text-[#556987]">{photography}</span></li>
+                    <li className="flex items-start gap-2"><div className="w-4 basis-4"><AiFillCheckCircle className="text-green-500 mt-[4px]" /></div> <span className="text-[#556987]">{onlineSupport}</span></li>
                 </ul>
             </div>
             <div className="mt-auto w-full">
