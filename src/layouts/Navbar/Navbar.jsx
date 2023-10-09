@@ -1,7 +1,7 @@
 import { Link, NavLink } from "react-router-dom";
 import { AiOutlineCloseCircle } from 'react-icons/ai'
 import { useContext, useState } from "react";
-import { FaBars, FaUserCircle } from 'react-icons/fa'
+import { FaAngleDown, FaAngleUp, FaBars, FaUserCircle } from 'react-icons/fa'
 import { authContext } from "../../authProvider/authProvider";
 
 const Navbar = () => {
@@ -38,12 +38,14 @@ const Navbar = () => {
                 <div className="flex gap-2 items-center">
                     <div className="relative">
                         {
-                            user !== null ? <img className="w-8 h-auto rounded-full cursor-pointer" src={user?.photoURL} onClick={() => setOpenProfile(!openProfile)} /> : <FaUserCircle className="text-2xl" />
+                            user !== null ? 
+                            <div className="flex items-center cursor-pointer gap-1"  onClick={() => setOpenProfile(!openProfile)}><img className="w-8 h-auto border rounded-full" src={user?.photoURL} /> <FaAngleDown className={`text-gray-500 transition-all ${openProfile === true ? 'rotate-180' : 'rotate-0'}`} /> </div>
+                            : <FaUserCircle className="text-2xl" />
                         }
 
                         <div className={`absolute right-0 w-[250px] bg-white z-50 p-5 transition-all rounded-b-md border ${openProfile === true ? 'visible opacity-100 top-[52px]' : 'invisible opacity-0 top-[48px]'}`}>
-                            <span className="block">Name:<br /> {user?.displayName}</span>
-                            <span className="block">User:<br /> {user?.email?.toLowerCase()}</span>
+                            <span className="block text-sm mt-2 text-gray-500">{user?.displayName}</span>
+                            <span className="block text-sm mt-2 text-gray-500">{user?.email?.toLowerCase()}</span>
                             <button onClick={() => {
                                 singOutUser().then().catch();
                                 setOpenProfile(false);
